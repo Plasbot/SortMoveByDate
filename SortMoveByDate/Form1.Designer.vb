@@ -31,16 +31,17 @@ Partial Class Form1
         Me.tbDestination = New System.Windows.Forms.ToolStripTextBox()
         Me.tsbBrowseDestination = New System.Windows.Forms.ToolStripButton()
         Me.tsbMove = New System.Windows.Forms.ToolStripButton()
+        Me.tbCutoff = New System.Windows.Forms.ToolStripTextBox()
+        Me.tsbPlusMinus = New System.Windows.Forms.ToolStripButton()
         Me.ssMain = New System.Windows.Forms.StatusStrip()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.lvLeft = New System.Windows.Forms.ListView()
         Me.ssLeft = New System.Windows.Forms.StatusStrip()
+        Me.tsStatusLeftText = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lvRight = New System.Windows.Forms.ListView()
         Me.ssRight = New System.Windows.Forms.StatusStrip()
-        Me.tsStatusLeftText = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tbStatusRightText = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.tbCutoff = New System.Windows.Forms.ToolStripTextBox()
-        Me.tsbPlusMinus = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsMain.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -53,10 +54,10 @@ Partial Class Form1
         'tsMain
         '
         Me.tsMain.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbBrowseSource, Me.tbSource, Me.tsbPopulate, Me.ToolStripSeparator1, Me.tbDestination, Me.tsbBrowseDestination, Me.tsbMove, Me.tbCutoff, Me.tsbPlusMinus})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbBrowseSource, Me.tbSource, Me.tsbPopulate, Me.ToolStripSeparator1, Me.tbDestination, Me.tsbBrowseDestination, Me.tsbMove, Me.tbCutoff, Me.tsbPlusMinus, Me.ToolStripSeparator2})
         Me.tsMain.Location = New System.Drawing.Point(0, 0)
         Me.tsMain.Name = "tsMain"
-        Me.tsMain.Size = New System.Drawing.Size(1024, 27)
+        Me.tsMain.Size = New System.Drawing.Size(871, 25)
         Me.tsMain.TabIndex = 0
         Me.tsMain.Text = "ToolStrip1"
         '
@@ -66,13 +67,13 @@ Partial Class Form1
         Me.tsbBrowseSource.Image = CType(resources.GetObject("tsbBrowseSource.Image"), System.Drawing.Image)
         Me.tsbBrowseSource.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbBrowseSource.Name = "tsbBrowseSource"
-        Me.tsbBrowseSource.Size = New System.Drawing.Size(58, 24)
+        Me.tsbBrowseSource.Size = New System.Drawing.Size(47, 22)
         Me.tsbBrowseSource.Text = "Source"
         '
         'tbSource
         '
         Me.tbSource.Name = "tbSource"
-        Me.tbSource.Size = New System.Drawing.Size(250, 27)
+        Me.tbSource.Size = New System.Drawing.Size(188, 25)
         '
         'tsbPopulate
         '
@@ -80,19 +81,19 @@ Partial Class Form1
         Me.tsbPopulate.Image = CType(resources.GetObject("tsbPopulate.Image"), System.Drawing.Image)
         Me.tsbPopulate.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbPopulate.Name = "tsbPopulate"
-        Me.tsbPopulate.Size = New System.Drawing.Size(71, 24)
+        Me.tsbPopulate.Size = New System.Drawing.Size(58, 22)
         Me.tsbPopulate.Text = "Populate"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'tbDestination
         '
         Me.tbDestination.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.tbDestination.Name = "tbDestination"
-        Me.tbDestination.Size = New System.Drawing.Size(250, 27)
+        Me.tbDestination.Size = New System.Drawing.Size(300, 25)
         '
         'tsbBrowseDestination
         '
@@ -101,7 +102,7 @@ Partial Class Form1
         Me.tsbBrowseDestination.Image = CType(resources.GetObject("tsbBrowseDestination.Image"), System.Drawing.Image)
         Me.tsbBrowseDestination.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbBrowseDestination.Name = "tsbBrowseDestination"
-        Me.tsbBrowseDestination.Size = New System.Drawing.Size(89, 24)
+        Me.tsbBrowseDestination.Size = New System.Drawing.Size(71, 22)
         Me.tsbBrowseDestination.Text = "Destination"
         '
         'tsbMove
@@ -111,22 +112,38 @@ Partial Class Form1
         Me.tsbMove.Image = CType(resources.GetObject("tsbMove.Image"), System.Drawing.Image)
         Me.tsbMove.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbMove.Name = "tsbMove"
-        Me.tsbMove.Size = New System.Drawing.Size(50, 24)
+        Me.tsbMove.Size = New System.Drawing.Size(41, 22)
         Me.tsbMove.Text = "Move"
+        '
+        'tbCutoff
+        '
+        Me.tbCutoff.Name = "tbCutoff"
+        Me.tbCutoff.Size = New System.Drawing.Size(76, 25)
+        '
+        'tsbPlusMinus
+        '
+        Me.tsbPlusMinus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.tsbPlusMinus.Image = CType(resources.GetObject("tsbPlusMinus.Image"), System.Drawing.Image)
+        Me.tsbPlusMinus.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbPlusMinus.Name = "tsbPlusMinus"
+        Me.tsbPlusMinus.Size = New System.Drawing.Size(44, 22)
+        Me.tsbPlusMinus.Text = "Minus"
         '
         'ssMain
         '
         Me.ssMain.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ssMain.Location = New System.Drawing.Point(0, 373)
+        Me.ssMain.Location = New System.Drawing.Point(0, 299)
         Me.ssMain.Name = "ssMain"
-        Me.ssMain.Size = New System.Drawing.Size(1024, 22)
+        Me.ssMain.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
+        Me.ssMain.Size = New System.Drawing.Size(871, 22)
         Me.ssMain.TabIndex = 1
         Me.ssMain.Text = "StatusStrip1"
         '
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 27)
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 25)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -138,16 +155,18 @@ Partial Class Form1
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.lvRight)
         Me.SplitContainer1.Panel2.Controls.Add(Me.ssRight)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1024, 346)
-        Me.SplitContainer1.SplitterDistance = 524
+        Me.SplitContainer1.Size = New System.Drawing.Size(871, 274)
+        Me.SplitContainer1.SplitterDistance = 445
+        Me.SplitContainer1.SplitterWidth = 3
         Me.SplitContainer1.TabIndex = 2
         '
         'lvLeft
         '
         Me.lvLeft.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lvLeft.Location = New System.Drawing.Point(0, 0)
+        Me.lvLeft.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lvLeft.Name = "lvLeft"
-        Me.lvLeft.Size = New System.Drawing.Size(524, 321)
+        Me.lvLeft.Size = New System.Drawing.Size(445, 252)
         Me.lvLeft.TabIndex = 1
         Me.lvLeft.UseCompatibleStateImageBehavior = False
         '
@@ -155,18 +174,26 @@ Partial Class Form1
         '
         Me.ssLeft.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ssLeft.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsStatusLeftText})
-        Me.ssLeft.Location = New System.Drawing.Point(0, 321)
+        Me.ssLeft.Location = New System.Drawing.Point(0, 252)
         Me.ssLeft.Name = "ssLeft"
-        Me.ssLeft.Size = New System.Drawing.Size(524, 25)
+        Me.ssLeft.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
+        Me.ssLeft.Size = New System.Drawing.Size(445, 22)
         Me.ssLeft.TabIndex = 0
         Me.ssLeft.Text = "StatusStrip2"
+        '
+        'tsStatusLeftText
+        '
+        Me.tsStatusLeftText.Name = "tsStatusLeftText"
+        Me.tsStatusLeftText.Size = New System.Drawing.Size(120, 17)
+        Me.tsStatusLeftText.Text = "ToolStripStatusLabel1"
         '
         'lvRight
         '
         Me.lvRight.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lvRight.Location = New System.Drawing.Point(0, 0)
+        Me.lvRight.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lvRight.Name = "lvRight"
-        Me.lvRight.Size = New System.Drawing.Size(496, 321)
+        Me.lvRight.Size = New System.Drawing.Size(423, 252)
         Me.lvRight.TabIndex = 1
         Me.lvRight.UseCompatibleStateImageBehavior = False
         '
@@ -174,46 +201,33 @@ Partial Class Form1
         '
         Me.ssRight.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ssRight.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tbStatusRightText})
-        Me.ssRight.Location = New System.Drawing.Point(0, 321)
+        Me.ssRight.Location = New System.Drawing.Point(0, 252)
         Me.ssRight.Name = "ssRight"
-        Me.ssRight.Size = New System.Drawing.Size(496, 25)
+        Me.ssRight.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
+        Me.ssRight.Size = New System.Drawing.Size(423, 22)
         Me.ssRight.TabIndex = 0
         Me.ssRight.Text = "StatusStrip3"
-        '
-        'tsStatusLeftText
-        '
-        Me.tsStatusLeftText.Name = "tsStatusLeftText"
-        Me.tsStatusLeftText.Size = New System.Drawing.Size(153, 20)
-        Me.tsStatusLeftText.Text = "ToolStripStatusLabel1"
         '
         'tbStatusRightText
         '
         Me.tbStatusRightText.Name = "tbStatusRightText"
-        Me.tbStatusRightText.Size = New System.Drawing.Size(153, 20)
+        Me.tbStatusRightText.Size = New System.Drawing.Size(120, 17)
         Me.tbStatusRightText.Text = "ToolStripStatusLabel2"
         '
-        'tbCutoff
+        'ToolStripSeparator2
         '
-        Me.tbCutoff.Name = "tbCutoff"
-        Me.tbCutoff.Size = New System.Drawing.Size(100, 27)
-        '
-        'tsbPlusMinus
-        '
-        Me.tsbPlusMinus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tsbPlusMinus.Image = CType(resources.GetObject("tsbPlusMinus.Image"), System.Drawing.Image)
-        Me.tsbPlusMinus.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbPlusMinus.Name = "tsbPlusMinus"
-        Me.tsbPlusMinus.Size = New System.Drawing.Size(52, 24)
-        Me.tsbPlusMinus.Text = "Minus"
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1024, 395)
+        Me.ClientSize = New System.Drawing.Size(871, 321)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.ssMain)
         Me.Controls.Add(Me.tsMain)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.tsMain.ResumeLayout(False)
@@ -251,4 +265,5 @@ Partial Class Form1
     Friend WithEvents tbStatusRightText As ToolStripStatusLabel
     Friend WithEvents tbCutoff As ToolStripTextBox
     Friend WithEvents tsbPlusMinus As ToolStripButton
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class

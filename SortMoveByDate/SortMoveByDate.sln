@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SortMoveByDate", "SortMoveByDate\SortMoveByDate.vbproj", "{90778857-430F-4E36-8C65-1CE3D5BF1262}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SortMoveByDate", "SortMoveByDate.vbproj", "{90778857-430F-4E36-8C65-1CE3D5BF1262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {583529A7-333B-4F5F-B856-3436C9C6A6D6}
 	EndGlobalSection
 EndGlobal
